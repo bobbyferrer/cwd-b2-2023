@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&family=Quicksand:wght@300&family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & sidenav</title>
+</head>
+<body class="grey-text text-darken-2">
+ <div class="navbar-fixed">
+    <nav class="pink darken-2">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo">Cummings - Emard</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="navbar-sidenav.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="https://materializecss.com/icons.html" target="_blank">Material Icons</a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-navbar">
+                         <i class="fa-brands fa-square-js"></i>
+                        </a>
+                    </li>
+                </ul>
+             </div>
+        </div>
+      </nav>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown-menu" class="dropdown-content pink">
+        <li>
+            <a href="" class="white-text" target="_blank">JavaScript
+                <i class="fa-brands fa-js"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://react.dev/" class="white-text" target="_blank">React
+                <i class="fa-brands fa-react"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://nodejs.org/en" class="white-text" target="_blank">
+                NodeJS
+                <i class="fa-brands fa-node-js left"></i>
+            </a>
+        </li>
+      </ul>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown-navbar" class="dropdown-content pink">
+        <li>
+            <a href="" class="white-text" target="_blank">JavaScript
+                <i class="fa-brands fa-js"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://react.dev/" class="white-text" target="_blank">React
+                <i class="fa-brands fa-react"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://nodejs.org/en" class="white-text" target="_blank">
+                NodeJS
+                <i class="fa-brands fa-node-js left"></i>
+            </a>
+        </li>
+      </ul>
+ </div>
+ <!-- Sidenav structure -->
+ <ul id="slide-out" class="sidenav">
+   <li>
+    <div class="user-view">
+        <div class="background">
+            <img src="images/img1.jpg" alt="">
+        </div>
+        <a href="">
+            <i class="fa-brands fa-square-js large"></i>
+        </a>
+        <a href="">
+            <span class="white-text name">Muriel Hamill</span>
+        </a>
+        <a href="">
+            <span class="white-text email">muriel_hamill@gmail.com</span>
+        </a>
+    </div>
+   </li>
+   <li class="active">
+    <a href="navbar-sidenav.html">Home</a>
+</li>
+<li>
+    <a href="index.html">About</a>
+</li>
+<li>
+    <a href="https://materializecss.com/icons.html" target="_blank">Material Icons</a>
+</li>
+<li>
+    <a href="" class="dropdown-trigger" data-target="dropdown-menu">
+     <i class="fa-brands fa-square-js"></i>
+    </a>
+</li>
+ </ul>
+
+ <h1 class="pink-text text-lighten-2 center">Grid</h1>
+
+ <div class="divider"></div>
+ <div class="container">
+    <br>
+    <p>We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.
+    </p>
+
+    <h3 class="pink-text text-lighten-2">Container</h3>
+    <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+
+    <p class="flow-text">Demo</p>
+    <p>Try the button below to see what the page looks like without containers.</p>
+    <button class="btn">Turn on Container</button>
+ </div>
+ 
+
+
+    
+
+
+
+
+     <!-- Jquery CDN -->
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   <script>
+    $(document).ready(function() {
+        // Dropdown Init
+        $('.dropdown-trigger').dropdown();
+        // Sidenav init
+        $('.sidenav').sidenav({
+            edge: 'right',
+            inDuration: 1000,
+            outDuration: 1000
+        });
+    });
+   </script>
+
+   <!-- 
+    Group 1
+1. Mark Adreian Ramos
+2. Holly Zephyr Fawn Apordo
+3.Meng Reyes 
+4. Eva Arne Loyola
+5. Francis Oaevenada
+    -->
+</body>
+</html>
